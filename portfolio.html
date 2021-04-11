@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="portfolio-body-container">
+        <!--MAIN CONTAINER-->
+        <header class="header">
+            <!--NAVIGATION PANEL-->
+            <div class="header-section conteiner">
+                <nav class="navigation-panel">
+                    <a href="./index.html" lang="en"  class="logo"><span class="logo-first-verb">Web</span> <span class="logo-second-verb">Studio</span></a>
+                    <ul class="navigation-list">
+                        <li class="navigation-list-item"><a href="./index.html" class="header-link">Студия</a></li>
+                        <li class="navigation-list-item"><a href="./portfolio.html" class="header-link">Портфолио</a></li>
+                        <li class="navigation-list-item"><a href="" class="header-link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="header-contacts-list">
+                    <li class="header-contact-list-item">
+                        <a href="mailto:info@example.com" class="contact">
+                            <div class="contacts-ico-division">
+                                <svg width="16" height="12" сlass="contact-ico">
+                                    <use href="./images/icons.svg#icon-E-mail"></use>
+                                </svg>
+                            </div>
+                            <p class="header-contact-ref-text">info@example.com</p>
+                        </a>
+                    </li>
+                    <li class="header-contact-list-item">
+                        <a href="teL:+380961111111" class="contact">
+                            <div class="contacts-ico-division">
+                                <svg width="10" height="16" сlass="contact-ico">
+                                    <use href="./images/icons.svg#icon-Phone"></use>
+                                </svg>
+                            </div>
+                            <p class="header-contact-ref-text">+380961111111</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+    <!--MAIN-->
+    <main>
+        <section class="section">
+            <div class="conteiner">
+                <h1 hidden>Фильтр</h1>
+                <ul class="button-set-list">
+                        <li class="button-list-item"><button class="portfolio-filter-button all-button">Все</button></li>
+                        <li class="button-list-item"><button class="portfolio-filter-button web-site-button">Веб Сайт</button></li>
+                        <li class="button-list-item"><button class="portfolio-filter-button application-button">Приложение</button></li>
+                        <li class="button-list-item"><button class="portfolio-filter-button desing-button">Дизайн</button></li>
+                        <li class="button-list-item"><button class="portfolio-filter-button marketing-button">Маркетинг</button></li>
+                </ul>
+                <ul class="portfolio-cards-list">
+                    <li class="portfolio-card-list-item">
+                        <a href="" class="case-anker">
+                            <div class="animated-division">
+                                <img src="./images/img_web-page.jpg" alt="ноутбук с браузером" width="370" height="294">
+                                <p class="case-animated-desription">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                            </div>
+                            <div class="case-text-division">
+                                <h2 class="case-name">Технокряк</h2>
+                                <p class="desription">Веб сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-card-list-item">
+                            <img src="./images/NOvsGS.jpg" alt="два баскетболиста с мячем" width="370" height="294">
+                            <div class="case-text-division">
+                                <h2 class="case-name">Постер New Orlean vs Golden Star</h2>
+                                <p class="desription">Дизайн</p>
+                            </div>
+                    </li>
+                    <li class="portfolio-card-list-item">
+                            <img src="./images/seafood.jpg" alt="рыба" width="370" height="294">
+                            <div class="case-text-division">
+                                <h2 class="case-name">Ресторан Seafood</h2>
+                                <p class="desription">Приложение</p>
+                            </div>
+                    </li>
+                    <li class="portfolio-card-list-item">
+                            <img src="./images/Prime.jpg" alt="беспроводные черные наушники" width="370"  height="294">
+                            <div class="case-text-division">
+                                <h2 class="case-name">Проект Prime</h2>
+                                <p class="desription">Приложение</p>
+                            </div>
+                    </li>
+                    <li class="portfolio-card-list-item">
+                            <img src="./images/boxes.png" alt="коричневая и белая коробка" width="370"  height="294">
+                            <div class="case-text-division">
+                                <h2 class="case-name">Проект Boxes</h2>
+                                <p class="desription">Веб-сайт</p>
+                            </div>
+                    </li>
+                    <li class="portfolio-card-list-item">
+                            <img src="./images/web-page-inspriration-have-no-borders.jpg" alt="монитор с веб-сайтом"  height="294">
+                            <div class="case-text-division">
+                                <h2 class="case-name">Inspiration has no Borders</h2>
+                                <p class="desription">Дизайн</p>
+                            </div>
+                    </li>
+                    <li class="portfolio-card-list-item">
+                            <img src="./images/limited-edition.jpg" alt="открытая книга" width="370"  height="294">
+                            <div class="case-text-division">
+                                <h2 class="case-name">Издание Limited Edition</h2>
+                                <p class="desription">Дизайн</p>
+                            </div>
+
+                    <li class="portfolio-card-list-item">
+                            <img src="./images/L.A.B..jpg" alt="бирка со шнурком" width="370"  height="294">
+                            <div class="case-text-division">
+                                <h2 class="case-name">Проект LAB</h2>
+                                <p class="desription">Маркетинг</p>
+                            </div>
+                    </li>
+                    <li class="portfolio-card-list-item">
+                            <img src="./images/Growing-Bisiness.jpg" alt="человек набирает на клавиатуре ноутбука" width="370"  height="294">
+                            <div class="case-text-division">
+                                <h2 class="case-name">Growing Business</h2>
+                                <p class="desription">Приложение</p>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <!--FOOTER-->
+    <footer class="footer footer-division-secton">
+        <div class="footer-division conteiner">
+                <div class="footer-address-conteiner">
+                    <a href="./index.html" lang="en" style="text-decoration: none;" ><span class="logo-first-verb">Web</span> <span class="footer logo-second-verb">studio</span></a>
+                    <address class="address">      
+                        <p class="addr">г. Киев, пр-т Леси Украинки, 26</p>  
+                        <ul class="footer-contacts-list">
+                            <li class="footer-contacts-list-item"><a href="teL:+380961111111" class="footer-contact">+380961111111</a></li>
+                            <li class="footer-contacts-list-item"><a href="mailto:info@example.com" class="footer-contact">info@example.com</a></li>
+                        </ul>
+                    </address>
+                </div>    
+                <div class="footer-soc-links-container">
+                    <p class="follow-us-title">присоединяйтесь</p>
+                    <ul class="footer-soc-ref-list">
+                        <li class="footer-soc-links soc-link-item">
+                            <a href="" class="footer-soc-links soc-referece">
+                                <svg class="soc-icon">
+                                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-soc-links soc-link-item">
+                            <a href="" class="soc-referece">
+                                <svg class="footer-soc-links soc-icon">
+                                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-soc-links soc-link-item">
+                            <a href="" class="footer-soc-links soc-referece">
+                                <svg class="soc-icon">
+                                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-soc-links soc-link-item">
+                            <a href="" class="footer-soc-links soc-referece">
+                                <svg class="footer-soc-links soc-icon">
+                                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                </div>
+        </div>
+    </footer>
+</body>
+</html>
