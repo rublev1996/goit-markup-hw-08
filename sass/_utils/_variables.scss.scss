@@ -1,0 +1,148 @@
+:root {
+    /*MAIN-TAGS-STYLES*/ 
+
+    --second-title-color:#212121;
+    /*main*/
+    /*hdr*/
+    --header-link-default:#212121;
+    --header-contact-text-default:#757575;
+    --header-link-active:#2196F3;
+    --header-link-pseudoelement:#2196F3;
+    --logo-first-verb-color:#2196F3;
+    --logo-second-verb-color: #200505;
+    --footer-logo-second-verb-color:#FFFFFF;
+    --header-contact-ref-text-hover:#2196F3;
+    --contact-ico-fill-hover:#2196F3;
+    --mobile-button-color:#FFFFFF;
+    --mobile-button-color-icon:#212121;
+    /*ftr*/
+    --address-text-color: #FFFFFF;
+    --ftr-contacts-text-color:#FFFFFF, 60%;
+    --follow-us-title-text:#FFFFFF;
+    --footer-soc-icon-background: rgba(255, 255, 255, 0.1);
+    --footer-soc-icon-fill-deflaut:#FFFFFF;
+    --footer-subscribe-appeal-text:#FFFFFF;
+    --footer-subscribe-email:#2F303A;
+    --footer-subscribe-email-text:#FFFFFF, 60%;
+    --footer-subscribe-button-text:#FFFFFF;
+    --footer-subscribe-button: #2196F3;
+    /*cnts*/
+    --contact-hover-default:#757575;
+    --contact-hover-active:#2196F3;
+
+    /*portfolio*/
+    --paragraf-hover-active-button-text-color: #FFFFFF;
+    --portfolio-case-name:#212121;
+    --portfolio-desription:#757575;
+    --paragraf-default-button-text-color:#212121;
+    /*---*/
+    --paragraf-button-hover-active-color: #2196F3;
+    --paragraf-button-hover-default-color:#F5F4FA;
+    --portfolio-filter-button-border:#F5F4FA;
+    --case-animated-desription:#FFFFFF;
+    /*index*/
+    --main-title:#FFFFFF;
+    --hero-section-background:#2F303A;
+    --order-button-color:#2196F3;
+    --order-button--text-color:#FFFFFF;
+    --advantage-section-background:#FFFFFF;
+    --advantage-svg-conteiner-background:#F5F4FA;
+    --occupation--section-background:#FFFFFF;
+    --occupation-item-desription-text:#FFFFFF;
+    --advantage-text: #212121;
+    --advantage-description:#757575;
+    --second-title-text:#212121;
+    --staff-section-background:#F5F4FA;
+    --staff-position-text:#757575;
+    --staff-card-background:#FFFFFF;
+    --footer-background:#2F303A;
+    --soc-referece-backgrond-hover:#2196F3;
+    --soc-icon-fill:#AFB1B8;
+    --soc-icon-fill-hover:#FFFFFF;
+    --partner-icon-anker-conteiner-border:#AFB1B8;
+    --partner-icon-anker-conteiner-border-active:#2196F3;
+    --partners-icon-fill:#AFB1B8;
+    --partners-icon-fill-active:#2196F3;
+    /*modal*/
+    --backdrop-background: rgba(0, 0, 0, 0.2);
+    --modal-backgroud:#FFFFFF;
+    --close-modal-button-background-color:#FFFFFF;
+    --close-modal-button-icon-fill-hover: #2196F3;
+    --modal-form-appeal:#212121;
+    --modal-input-description:#757575;
+    --border-modal-input-space-hover:#2196F3;
+    --modal-input-icon:#212121;
+    --modal-input-icon-hover:#2196F3;
+    --modal-checkbox-description:#757575;
+    --modal-checkbox-description-anker:#2196F3;
+    --modal-submit-button-text-color:#FFFFFF;
+    --modal-submit-button-color:#2196F3;
+    --modal-submit-button-color-hover:#188CE8;
+    --modal-submit-button-border:#2196F3;
+    --modal-checkbox-description-border:#212121;
+    --modal-checkbox-description-custom-checkbox:#2196F3;
+    /*mobile menu*/
+    --close-mobeile-button-icon-deflaut:#212121;
+    --close-mobile-button-background-color:#FFFFFF;
+    --close-mobile-button-icon-fill-hover: #2196F3;
+    --contact-tel-default:#2196F3;
+    --contact-mail-default:#757575;
+    --mobile-soc-list-item-border:rgba(33, 33, 33, 0.2);
+    --mobile-soc-anker-text:#2196F3;
+}
+
+$main_font:Roboto;
+
+$logo_font:Raleway;
+
+%section {
+    font-family: inherit;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+%conteiner {
+    font-family: inherit;
+    margin: 0px auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+%index-list-item:not(:last-child){
+    font-style: inherit;
+    margin-right: 30px;
+}
+
+%visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+  }
+
+%second-title {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--second-title-color);
+}
+
+%button {
+    border:none;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
+

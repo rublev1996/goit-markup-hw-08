@@ -1,0 +1,65 @@
+.footer-subscribe-division {
+    padding: 12px;
+    margin-left: 93px;
+
+    &__appeal{
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.1;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--footer-subscribe-appeal-text);
+    }
+}
+
+.footer-subscribe-form{
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+
+    &__input{
+        padding-left: 16px;
+        width: 358px;
+        margin-right: 12px;
+        background-color: var(--footer-subscribe-email);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-sizing: border-box;
+        border-radius: 4px;
+    
+        font-family: inherit;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 1.30;
+        color: var(--footer-subscribe-email-text);
+    }
+}
+
+.footer-submit-button {
+    padding-left: 29px;
+    padding-top: 10px;
+    display: flex;
+    width: 200px;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--footer-subscribe-button);
+    @extend %button;
+
+    &__description {
+        margin-right: 10px;
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1.9;
+        color: var(--footer-subscribe-button-text);
+    }
+
+    &__icon {
+        display: block;
+        height: 24px;
+    }
+}

@@ -1,0 +1,183 @@
+@import url(../color/color.scss);
+.header {
+  border-bottom: 1px solid #ECECEC;
+}
+
+.header-content-wrapper {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  justify-content: space-between;
+}
+
+.navigation-panel {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  width: 294px;
+}
+
+.navigation-list__item {
+  margin-right: 50px;
+}
+
+.header-contacts-list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.header-contacts-list .contact {
+  padding-right: 50px;
+}
+
+.header-link {
+  position: relative;
+  transition-property: background-color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--header-link-default);
+}
+
+.header-link:focus, .header-link:hover, .header-link:active {
+  color: var(--header-link-active);
+}
+
+.header-link:hover::after {
+  position: absolute;
+  content: '';
+  display: block;
+  margin-top: 28px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--header-link-pseudoelement);
+}
+
+.header-cotacts-list__item {
+  display: flex;
+  list-style-type: none;
+}
+
+.header-cotacts-list__item .contact-anker {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
+  display: flex;
+  text-decoration: none;
+  padding-right: 50px;
+}
+
+.header-cotacts-list__item--end {
+  display: flex;
+  list-style-type: none;
+}
+
+.header-cotacts-list__item--end .contact-anker {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
+  display: flex;
+  text-decoration: none;
+  padding-right: 50px;
+}
+
+.contacts-ico-wrapper {
+  margin-right: 10px;
+}
+
+.contact:active,
+.contact:focus,
+.contact:hover {
+  fill: var(--contact-ico-fill-hover);
+}
+
+.header-contact-ref-text {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  /*var*/
+  color: var(--header-contact-text-default);
+  text-decoration: none;
+}
+
+.contact-anker__text {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  /*var*/
+  color: var(--header-contact-text-default);
+  text-decoration: none;
+}
+
+.header-link:active,
+.header-link:focus,
+.header-link:hover {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--header-link-active);
+  text-decoration: none;
+}
+
+.header-link {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  /*var*/
+  color: var(--header-link-default);
+  text-decoration: none;
+}
+
+.contact-active:active,
+.contact-active:focus,
+.contact-active:hover {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--contact-hover-active);
+  text-decoration: none;
+}
+
+.contact-anker {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--contact-hover-default);
+  text-decoration: none;
+  color: var(--contact-hover-default);
+  text-decoration: none;
+  font-style: normal;
+}
+/*# sourceMappingURL=header.css.map */

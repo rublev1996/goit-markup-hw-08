@@ -1,0 +1,122 @@
+.staff {
+    background-color: var(--staff-section-background);
+    @extend %section;
+}
+
+.staff-division {
+    display: flex;
+    flex-direction: column;
+    @extend %conteiner;
+
+    &__title {
+        align-self: center;
+        margin-bottom: 50px;
+        @extend %second-title;
+    }
+} 
+
+.staff-list{
+    font-family: inherit;
+    display: flex;
+    list-style-type: none;
+}
+
+.staff-item{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    @extend %index-list-item;
+    
+}
+
+.staff-card {
+    display: flex;
+    padding-bottom:30px;
+    flex-direction: column;
+    align-content: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--staff-card-background);
+
+    &__image {
+        object-fit: cover;
+    }
+}
+
+
+
+.staff-description {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-top: 30px;
+
+    &__name{
+        font-family: inherit;
+        align-self: center;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.2;
+        color: var(--second-title-text);
+        
+    }
+    
+    &__position {
+        font-style: normal;
+        margin-top: 10px;
+        align-self: center;
+        font-family: inherit;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        color: var(--staff-position-text);
+    }
+}
+
+
+.soc-ref-list {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 16px;
+    width: 206px;
+}
+
+.soc-referece {
+    transition-duration: 250ms;
+    transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color;
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items:center;
+    border-radius: 50%;
+
+    &:focus,
+    &:active,
+    &:hover {
+    background-color: var(--soc-referece-backgrond-hover);
+}
+
+    &:focus .soc-icon,
+    &:active .soc-icon,
+    &:hover .soc-icon{
+        fill: var(--soc-icon-fill-hover);
+    }
+}
+
+
+.soc-icon {
+    display: flex;
+    height: 20px;
+    width: 20px;
+    fill:var(--soc-icon-fill);
+}
+
+.soc-link-item {
+    margin-right: 10px;
+}
