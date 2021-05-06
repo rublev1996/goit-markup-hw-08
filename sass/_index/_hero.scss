@@ -54,3 +54,37 @@
         @extend %button;
     }
 }
+
+@media screen and (max-width:479px) {
+
+    .hero{
+        padding: 0px;
+        max-width: 100vh;
+        background-image: url(../images/mobile-hero-img.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+        background-image: url(../images/mobile-hero-img.jpg);
+  }
+}
+    
+    .hero-content-wrapper {
+        height: 400px;
+        padding-top: 118px;
+        padding-bottom: 0px;
+        max-width: 360px;
+        &__title {
+            white-space:pre-wrap;
+            max-width: 320px;
+            align-self: center;
+            font-family: inherit;
+            font-weight: 900;
+            font-size: 26px;
+            line-height: 1.6;
+        }
+    }
+}
