@@ -341,12 +341,17 @@ ul {
     max-width: 480px;
   }
   .mobile-menu-button {
+    width: 40px;
+    height: 40px;
     padding: 0px;
     border: none;
     background-color: var(--mobile-button-color);
   }
-  .mobile-menu-button__icon {
+  .mobile-menu-button-icon {
     fill: var(--mobile-button-color-icon);
+  }
+  .mobile-menu-button-icon:hover {
+    fill: var(--close-mobile-button-icon-fill-hover);
   }
 }
 
@@ -375,24 +380,6 @@ ul {
     display: block;
     padding: 40px 48px;
     max-block-size: 320px;
-  }
-  .mobile-close-button {
-    position: absolute;
-    transition-property: fill;
-    transition-duration: 250ms;
-    margin-top: 21px;
-    margin-right: 25px;
-    top: 0;
-    right: 0;
-    border: none;
-    padding: 0px;
-    background: var(--close-mobile-button-background-color);
-  }
-  .mobile-close-button__icon {
-    fill: var(--close-mobeile-button-icon-deflaut);
-  }
-  .mobile-close-button:hover, .mobile-close-button:focus, .mobile-close-button__icon {
-    fill: var(--close-mobile-button-icon-fill-hover);
   }
   .mobile-navigation-list {
     list-style-type: none;
@@ -426,9 +413,10 @@ ul {
     color: var(--contact-mail-default);
   }
   .mobile-soc-list {
+    flex-wrap: wrap;
     list-style-type: none;
     display: flex;
-    min-width: 197px;
+    max-width: 100vh;
   }
   .mobile-soc-list__item--start {
     padding-right: 10px;
@@ -437,8 +425,8 @@ ul {
     padding-left: 10px;
   }
   .mobile-soc-list__item--second {
-    padding-left: 10px;
     padding-right: 10px;
+    padding-left: 10px;
     border-left: 1px solid;
     background-color: var --mobile-soc-list-item-border;
   }
@@ -450,13 +438,14 @@ ul {
     background-color: var --mobile-soc-list-item-border;
   }
   .mobile-soc-anker {
+    margin: 0px auto;
     text-decoration: none;
   }
   .mobile-soc-anker__text {
     font-family: inherit;
     font-style: normal;
     font-weight: 500;
-    font-size: calc(6px + 6*(100vw/1280));
+    font-size: 18px;
     line-height: 1.2;
     color: var(--mobile-soc-anker-text);
   }

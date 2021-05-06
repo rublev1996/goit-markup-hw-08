@@ -52,8 +52,9 @@
                 </li>
             </ul>
             <button type="button" class="mobile-menu-button" data-menu-button>
-                <svg class="mobile-menu-button__icon" width="40px" height="40px">
-                    <use href="./images/icons.svg#icon-mobile-menu-icon" ></use>
+                <svg class="mobile-menu-button-icon">
+                    <use class="mobile-menu-button-icon__menu" href="./images/icons.svg#icon-mobile-menu-icon" width="40px" height="40px" ></use>
+                    <use class="mobile-menu-button-icon__close is-hidden" href="./images/icons.svg#icon-close_button" width="19px" height="19px" ></use>
                 </svg>
             </button> 
         </div>
@@ -366,11 +367,8 @@
         </section> 
         -->
     </main>
-    <div class="mobile-menu-wrapper" data-menu>
+    <div class="mobile-menu-wrapper is-hidden" data-menu>
         <button class="mobile-close-button" type="button" data-modal-close>
-            <svg class="mobile-close-button__icon" width="19px" height="19px">
-                <use href="./images/icons.svg#icon-close_button"></use>
-            </svg>
         </button>
         <ul class="mobile-navigation-list">
             <li class="mobile-navigation-list__item">

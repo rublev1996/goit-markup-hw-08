@@ -184,14 +184,17 @@
     }
 
     .mobile-menu-button {
+        width: 40px;
+        height: 40px;
         padding:0px;
         border:none;
         background-color: var(--mobile-button-color);
     }
 
-    .mobile-menu-button {
-        &__icon {
-            fill:var(--mobile-button-color-icon);
+    .mobile-menu-button-icon {
+        fill:var(--mobile-button-color-icon);
+        &:hover {
+            fill:var(--close-mobile-button-icon-fill-hover);
         }
     }
 

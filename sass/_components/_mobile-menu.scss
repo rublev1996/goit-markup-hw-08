@@ -6,27 +6,6 @@
         max-block-size: 320px;
     }
 
-    .mobile-close-button {
-        position: absolute;
-        transition-property: fill;
-        transition-duration: 250ms;
-        margin-top: 21px;
-        margin-right: 25px;
-        top:0;
-        right:0;
-        border: none;
-        padding:0px;
-        background: var(--close-mobile-button-background-color);
-
-        &__icon {
-            fill: var(--close-mobeile-button-icon-deflaut);
-        }
-
-        &:hover, &:focus, &__icon{
-            fill:var(--close-mobile-button-icon-fill-hover);
-        }
-    }
-
     .mobile-navigation-list {
         list-style-type: none;
         margin-bottom: 302px;
@@ -69,9 +48,10 @@
     }
     
     .mobile-soc-list {
+        flex-wrap: wrap;
         list-style-type: none;
         display: flex;
-        min-width: 197px;
+        max-width: 100vh;
 
         &__item--start {
             padding-right: 10px;
@@ -83,8 +63,8 @@
 
 
         &__item--second {
-            padding-left: 10px;
             padding-right: 10px;
+            padding-left: 10px;
             border-left: 1px solid;
             background-color: var (--mobile-soc-list-item-border);
         }
@@ -100,12 +80,13 @@
     }
 
     .mobile-soc-anker {
+        margin: 0px auto;
         text-decoration: none;
         &__text {
             font-family: inherit;
             font-style: normal;
             font-weight: 500;
-            font-size: calc(6px + 6*(100vw/1280));
+            font-size: 18px;
             line-height: 1.2;
             color:var(--mobile-soc-anker-text)
         }
